@@ -199,7 +199,6 @@ button:hover {
 .card-planeta {
     display: flex;
     flex-direction: column;
-    background-color: var(--amarelo);
     color: var(--preto);
     width: 250px;
     min-height: 150px;
@@ -222,14 +221,26 @@ button:hover {
     }
 }
 
-.card-planeta:hover{
-    background-color: var(--branco);
-    color: var(--preto);
-    h2 {
-        color: var(--preto);
-    }
+#tatooine { background-color: #d9aa0f; }
+#coruscant {background-color: #172b82; color: var(--branco); h2{color: var(--branco)}}
+#hoth {background-color: #7ae2ff;}
+#endor {background-color: #399e4a;}
+#naboo {background-color: #28a4c7;}
+#mustafar {background-color: #c9222d;}
+#dragobah {background-color: #a8c922;}
+#alderaan {background-color: #c43939;}
 
-    p{
-        color: var(--preto);
+hr {
+    height: 3px; 
+    background-color: var(--amarelo); 
+    border: none;            
+}
+
+.forca {
+    color: var(--amarelo);
+
+    h2{
+        font-family: 'Michroma';
+        text-align: center;
     }
 }
