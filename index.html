@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Star Wars</title>
 </head>
@@ -22,7 +23,7 @@
             <a href="#sithvsjedi">Sith vs Jedi</a>
             <a href="#cores-sabre">Significado dos sabres</a>
             <input type="text" placeholder="Pesquisar..." name="search">
-        <button type="submit">Procurar</button>
+        <button type="submit"><i class="bx bx-search"></i></button>
         </div>
     </nav>
     </div>
@@ -40,5 +41,110 @@
             </div>
         </div>
     </div>
+
+    <div id="mensagem">
+        <h2>May the force be with you</h2>
+    </div>
+
+    <div class="personagens">
+        <h2>Personagens principais da saga</h2>
+
+        <div class="personagens-lista">
+            <div class="personagens-item">
+                <img src="assets/img/anakin.jpeg" id="img-anakin" onmouseover="transformarDarth()" alt="Anakin Skywalker">
+                <button id="nome-anakin" onmouseover="transformarDarth()">Anakin Skywalker</button>
+            </div>
+
+        <div class="personagens-item">
+            <img src="assets/img/obi-wan.jpeg" alt="Obi-Wan Kenobi">
+            <button>Obi-Wan</button>
+        </div>
+
+        <div class="personagens-item">
+            <img src="assets/img/padme.png" alt="Padme">
+            <button>Padme Amidala</button>
+        </div>
+
+        <div class="personagens-item">
+            <img src="assets/img/luke.jpg" alt="Luke Skywalker">
+            <button>Luke Skywalker</button>
+        </div>
+
+        <div class="personagens-item">
+            <img src="assets/img/princesa-leia.jpeg" alt="Princesa Leia">
+            <button>Princesa Leia</button>
+        </div>
+
+        <div class="personagens-item">
+            <img src="assets/img/hansolo.jpg" alt="Han-Solo">
+            <button>Han-Solo</button>
+        </div>
+
+        <div class="personagens-item">
+            <img src="assets/img/chewbacca.jpeg" alt="Chewbacca">
+            <button>Chewbacca</button>
+        </div>
+
+        <div class="personagens-item">
+            <img src="assets/img/yoda.jpeg" alt="Mestre Yoda">
+            <button>Yoda</button>
+        </div>
+
+        <div class="personagens-item">
+            <img src="assets/img/r2d2.jpeg" alt="R2D2">
+            <button>R2D2</button>
+        </div>
+
+        <div class="personagens-item">
+            <img src="assets/img/c3po.jpeg" alt="C3PO">
+            <button>C3PO</button>
+        </div>
+    </div>
+
+        <div class="cards-container">
+            <div class="cards-list">
+                <div class="card-planeta">
+                    <h2>Tatooine</h2>
+                    <p>Planeta com dois sóis, lar de Luke Skywalker, Anakin e ponto central de muitas histórias.</p>
+                </div>
+
+                <div class="card-planeta">
+                    <h2>Coruscant</h2>
+                    <p>Planeta inteiramente coberto por uma cidade. Sede do Senado Galáctico e do Templo Jedi.</p>
+                </div>
+
+                <div class="card-planeta">
+                    <h2>Hoth</h2>
+                    <p>Planeta de gelo onde a Aliança Rebelde estabeleceu sua base secreta, atacada pelo Império.</p>
+                </div>
+
+                <div class="card-planeta">
+                    <h2>Endor</h2>
+                    <p>Lua com florestas densas onde ocorreu a batalha final contra a segunda Estrela da Morte.</p>
+                </div>
+
+                <div class="card-planeta">
+                    <h2>Naboo</h2>
+                    <p>Planeta de paisagens exuberantes, lar da Rainha Amidala e de Jar Jar Binks.</p>
+                </div>
+
+                <div class="card-planeta">
+                    <h2>Mustafar</h2>
+                    <p>Planeta de lava onde Obi-Wan derrotou Anakin, marcando sua transformação em Darth Vader.</p>
+                </div>
+
+                <div class="card-planeta">
+                    <h2>Dragobah</h2>
+                    <p>Planeta pantanoso e isolado onde Yoda se escondeu do Império e treinou Luke Skywalker.</p>
+                </div>
+                
+                <div class="card-planeta">
+                    <h2>Alderaan</h2>
+                    <p>Planeta pacifista e lar de Leia, destruído pela Estrela da Morte como demonstração de poder.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="assets/js/script.js"></script>
 </html>

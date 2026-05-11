@@ -60,8 +60,9 @@ nav a:hover, nav a.active {
 input{
     padding: 6px 15px;
     border-radius: 30px;
-    font-family: 'Montserrat';
+    font-family: 'Michroma';
     border: none;
+    font-size: 80%;
 }
 
 button {
@@ -69,7 +70,7 @@ button {
     border-radius: 30px;
     color: var(--preto);
     background-color: var(--amarelo);
-    font-family: 'Montserrat';
+    font-family: 'Michroma';
     border: none;
     transition: all 0.5s ease;
 }
@@ -91,12 +92,13 @@ button:hover {
 
 .banner-slide {
     display: flex;
-    width: 400%; 
-    animation: slide-animation 12s infinite ease-in-out;
+    width: 300%;
+    animation: slide-automático 12s infinite ease-in-out;
 }
 
 .slide {
-    width: 100%;
+    width: 33.3333%; 
+    flex-shrink: 0;
 }
 
 .slide img {
@@ -106,10 +108,73 @@ button:hover {
     object-fit: cover; 
 }
 
-@keyframes slide-animation {
-    0%   { transform: translateX(0); }            
-    25%  { transform: translateX(-25%); }         
-    50%  { transform: translateX(-50%); }        
-    75%  { transform: translateX(-75%); }          
-    100% { transform: translateX(-75%); }          
+@keyframes slide-automático {
+    0%, 25% { transform: translateX(0); }            
+    33%, 58% { transform: translateX(-33.3333%); }         
+    66%, 91% { transform: translateX(-66.6666%); }        
+    100% { transform: translateX(0); }          
+}
+
+#mensagem {
+    h2{
+        display: flex;
+        justify-content: center;
+        font-family: 'Michroma';
+        color: var(--amarelo);
+        padding: 0 0 20px
+    }
+}
+
+.personagens{background-color: var(--amarelo);}
+
+.personagens-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+    padding: 20px;
+}
+
+.personagens-item {
+    width: 170px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
+
+.personagens-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--preto);
+    margin-bottom: 10px;
+}
+
+.personagens h2 {
+    text-align: center;
+    color: var(--preto);
+    font-family: 'Michroma';
+    font-weight: 1000;
+    padding: 20px 20px 20px;
+}
+
+.personagens button{
+    border: none;
+    border-radius: 8px;
+    font-family: 'Rajdhani';
+    color: var(--branco);
+    font-weight: 600;
+    background-color: var(--preto);
+    font-size: 18px;
+}
+
+.cards-container {
+    background-color: var(--preto);
+    color: var(--amarelo);
+
+    h2{
+        color: var(--amarelo);
+    }
 }
