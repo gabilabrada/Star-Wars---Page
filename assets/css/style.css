@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=TASA+Orbiter:wght@400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&family=TASA+Orbiter:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&family=TASA+Orbiter:wght@400..800&display=swap');
 
 :root {
     --preto: #000;
@@ -206,7 +207,6 @@ button:hover {
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.558);
-    transition: all 0.5s ease;
     h2{
         color: var(--preto);
         margin: 0 0 10px 0;
@@ -218,17 +218,18 @@ button:hover {
     p{
         font-size: 14px;
         margin: 0;
+        font-weight: 500;
     }
 }
 
-#tatooine { background-color: #d9aa0f; }
-#coruscant {background-color: #172b82; color: var(--branco); h2{color: var(--branco)}}
-#hoth {background-color: #7ae2ff;}
-#endor {background-color: #399e4a;}
-#naboo {background-color: #28a4c7;}
-#mustafar {background-color: #c9222d;}
-#dragobah {background-color: #a8c922;}
-#alderaan {background-color: #c43939;}
+#tatooine { background-color: #f6c00f; }
+#coruscant {background-color: #5575ff;}
+#hoth {background-color: #92e7ff;}
+#endor {background-color: #68c377;}
+#naboo {background-color: #41c4e9;}
+#mustafar {background-color: #e12633;}
+#dragobah {background-color: #bee032;}
+#alderaan {background-color: #f45b5b;}
 
 hr {
     height: 3px; 
@@ -236,11 +237,147 @@ hr {
     border: none;            
 }
 
+#banner-titulo{
+    background-color: var(--amarelo);
+    color: var(--preto);
+    padding: 0 5px; 
+}
 .forca {
     color: var(--amarelo);
 
     h2{
         font-family: 'Michroma';
         text-align: center;
+        font-size: 28px;
+        font-weight: 1000;
+        padding: 25px 20px 20px;
     }
+
+    h3{
+        font-family: 'Rajdhani';
+        padding: 0 20px;
+        font-size: 35px;
+    }
+
+    p{
+        font-family: 'Rajdhani';
+        padding: 0 20px 0 30px;
+        font-size: 25px;
+        font-weight: 100;
+    }
+
+    img {
+        display: block;
+        margin: 20px auto; 
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    p::first-letter{
+        font-family: 'Orbitron';
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    p::selection {
+        color: var(--preto);
+        background-color: var(--branco);
+    }
+}
+
+#jedi, #sith {
+    width: calc(100% - 40px);
+    margin: 20px auto; 
+    padding: 20px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: var(--amarelo);
+}
+
+#jedi {
+    background-color: rgba(0, 128, 0, 0.2); 
+    border: 1px solid rgba(0, 255, 0, 0.3); 
+}
+
+#sith {
+    background-color: rgba(255, 0, 0, 0.2); 
+    border: 1px solid rgba(255, 0, 0, 0.3); 
+}
+
+#jedi h4, #sith h4 {
+    font-family: 'Michroma';
+    margin-top: 0;
+    font-size: 24px;
+}
+
+#jedi p, #sith p {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#jedi p::first-letter, 
+#sith p::first-letter {
+    font-family: inherit; 
+    font-size: inherit; 
+    font-weight: inherit; 
+    line-height: inherit;
+    float: none;
+    padding: 0; 
+}
+
+#jedi img {
+    border-radius: 10px;
+    width: 400px;
+}
+
+.sabre {
+    background-color: var(--amarelo);
+    color: var(--preto);
+
+    h2 {
+        text-align: center;
+        font-family: 'Michroma';
+        font-weight: 1000;
+        padding: 25px 20px 20px;
+        font-size: 28px;
+    }
+}
+
+.sabre-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sabres {
+    display: flex;
+    flex-direction: column;
+    color: var(--preto);
+    width: 250px;
+    min-height: 150px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.558);
+}
+
+#azul {background-color: #4FC3F7};
+#verde {background-color: #66BB6A;}
+#vermelho {background-color: #EF5350;}
+#lilas {background-color: #CE93D8;}
+#branco {background-color: #F0F4FF;}
+#preto{background-color: #1A1A1A; h5{color: var(--branco);} p{color: var(--branco);}}
+#amarelo{background-color: #FFCC80;}
+#laranja{background-color: #FF8A65;}
+
+.footer {
+    color: var(--amarelo);
+    text-align: center;
 }
