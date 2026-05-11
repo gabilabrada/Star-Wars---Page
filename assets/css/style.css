@@ -157,7 +157,8 @@ button:hover {
     color: var(--preto);
     font-family: 'Michroma';
     font-weight: 1000;
-    padding: 20px 20px 20px;
+    padding: 25px 20px 20px;
+    font-size: 28px;
 }
 
 .personagens button{
@@ -173,8 +174,62 @@ button:hover {
 .cards-container {
     background-color: var(--preto);
     color: var(--amarelo);
+    padding-bottom: 50px;
 
     h2{
         color: var(--amarelo);
+        text-align: center;
+        font-family: 'Michroma';
+        font-weight: 1000;
+        padding: 25px 20px 20px;
+        font-size: 28px;
+    }
+}
+
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-planeta {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--amarelo);
+    color: var(--preto);
+    width: 250px;
+    min-height: 150px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.558);
+    transition: all 0.5s ease;
+    h2{
+        color: var(--preto);
+        margin: 0 0 10px 0;
+        font-size: 20px;
+        font-family: 'Michroma';
+        text-align: center;
+    }
+
+    p{
+        font-size: 14px;
+        margin: 0;
+    }
+}
+
+.card-planeta:hover{
+    background-color: var(--branco);
+    color: var(--preto);
+    h2 {
+        color: var(--preto);
+    }
+
+    p{
+        color: var(--preto);
     }
 }
