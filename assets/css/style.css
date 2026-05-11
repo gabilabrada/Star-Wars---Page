@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=TASA+Orbiter:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&family=TASA+Orbiter:wght@400..800&display=swap');
+
+:root {
+    --preto: #000;
+    --branco: #fff;
+    --amarelo: #FFE81F;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--preto);
+    font-family: 'Rajdhani', 'Arial';
+}
+
+#logo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center; 
+    width: 100%;            
+    padding: 20px 0;      
+    color: var(--branco);   
+}
+
+#logo-starwars {
+    max-width: 200px;      
+    height: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: var(--preto);
+    padding: 0 2rem;
+    height: 56px;
+    font-family: 'Michroma';
+}
+
+.logo { 
+    color: var(--amarelo); 
+    font-size: 16px; 
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: background .2s, color .2s;
+}
+nav a:hover, nav a.active {
+    background: rgba(255,232,31,.12);
+    color: var(--amarelo);
+}
+
+#menu {
+input{
+    padding: 6px 15px;
+    border-radius: 30px;
+    font-family: 'Montserrat';
+    border: none;
+}
+
+button {
+    padding: 6px 15px;
+    border-radius: 30px;
+    color: var(--preto);
+    background-color: var(--amarelo);
+    font-family: 'Montserrat';
+    border: none;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    color: var(--branco);
+    background-color: var(--preto)
+}
+}
+
+.banner-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden; 
+    border: 2px solid var(--amarelo);
+    border-radius: 8px;
+}
+
+.banner-slide {
+    display: flex;
+    width: 400%; 
+    animation: slide-animation 12s infinite ease-in-out;
+}
+
+.slide {
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    height: 400px; 
+    object-fit: cover; 
+}
+
+@keyframes slide-animation {
+    0%   { transform: translateX(0); }            
+    25%  { transform: translateX(-25%); }         
+    50%  { transform: translateX(-50%); }        
+    75%  { transform: translateX(-75%); }          
+    100% { transform: translateX(-75%); }          
+}
